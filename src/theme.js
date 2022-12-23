@@ -1,7 +1,7 @@
 import { createContext, useState, useMemo } from "react";
 import { createTheme } from "@mui/system";
 
-// color design tokens
+// this section is for color design tokens
 export const tokens = (mode) => ({
   ...(mode === "dark"
     ? {
@@ -120,4 +120,4 @@ export const tokens = (mode) => ({
       }),
 });
 
-// mui theme settings
+// this section is for mui theme settings
