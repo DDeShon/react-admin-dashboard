@@ -4,7 +4,11 @@ import { useState } from "react";
 
 function App() {
   const [theme, colorMode] = useMode();
-  return <div className="app"></div>;
+  return (
+    <ColorModeContext.Provider value={colorMode}>
+      <div className="app"></div>
+    </ColorModeContext.Provider>
+  );
 }
 
 export default App;
