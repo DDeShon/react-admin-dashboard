@@ -6,7 +6,10 @@ function App() {
   const [theme, colorMode] = useMode();
   return (
     <ColorModeContext.Provider value={colorMode}>
-      <div className="app"></div>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <div className="app"></div>
+      </ThemeProvider>
     </ColorModeContext.Provider>
   );
 }
