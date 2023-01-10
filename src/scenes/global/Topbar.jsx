@@ -14,7 +14,7 @@ const Topbar = () => {
     const colors = tokens(theme.palette.mode);
     const colorMode = useContext(ColorModeContext);
 
-    return <div>Topbar</div>
+    return (<div>Topbar</div>);
 }
 
 export default Topbar;
