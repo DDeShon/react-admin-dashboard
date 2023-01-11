@@ -14,7 +14,9 @@ const Topbar = () => {
     const colors = tokens(theme.palette.mode);
     const colorMode = useContext(ColorModeContext);
 
-    return (<Box></Box>);
+    return (<Box display="flex">
+
+    </Box>);
 }
 
 export default Topbar;
