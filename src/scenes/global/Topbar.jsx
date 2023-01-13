@@ -14,7 +14,7 @@ const Topbar = () => {
     const colors = tokens(theme.palette.mode);
     const colorMode = useContext(ColorModeContext);
 
-    return (<Box display="flex" justifyContent="">
+    return (<Box display="flex" justifyContent="space-between">
 
     </Box>);
 }
