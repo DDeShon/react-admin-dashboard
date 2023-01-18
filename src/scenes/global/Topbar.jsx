@@ -31,7 +31,7 @@ const Topbar = () => {
             {/* ICONS */}
             <Box display="flex">
                 <IconButton sx={{ display: "flex" }}>
-
+                    < LightModeOutlinedIcon />
                 </IconButton>
                 <IconButton sx={{ display: "flex" }}>
                     < NotificationsOutlinedIcon />
