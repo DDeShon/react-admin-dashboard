@@ -30,16 +30,16 @@ const Topbar = () => {
 
             {/* ICONS */}
             <Box display="flex">
-                <IconButton sx={{ display: "flex" }}>
+                <IconButton onClick={colorMode.toggleColorMode}>
                     < LightModeOutlinedIcon />
                 </IconButton>
-                <IconButton sx={{ display: "flex" }}>
+                <IconButton >
                     < NotificationsOutlinedIcon />
                 </IconButton>
-                <IconButton sx={{ display: "flex" }}>
+                <IconButton >
                     < SettingsOutlinedIcon />
                 </IconButton>
-                <IconButton sx={{ display: "flex" }}>
+                <IconButton >
                     < PersonOutlinedIcon />
                 </IconButton>
             </Box>
