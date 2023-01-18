@@ -30,9 +30,20 @@ const Topbar = () => {
 
             {/* ICONS */}
             <Box display="flex">
+                <IconButton sx={{ display: "flex" }}>
 
+                </IconButton>
+                <IconButton sx={{ display: "flex" }}>
+                    < NotificationsOutlinedIcon />
+                </IconButton>
+                <IconButton sx={{ display: "flex" }}>
+                    
+                </IconButton>
+                <IconButton sx={{ display: "flex" }}>
+
+                </IconButton>
             </Box>
-            <IconButton sx={{ display: "flex" }}></IconButton>
+            
         </Box>
     );
 }
