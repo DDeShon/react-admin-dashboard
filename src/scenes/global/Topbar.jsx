@@ -40,7 +40,7 @@ const Topbar = () => {
                     < SettingsOutlinedIcon />
                 </IconButton>
                 <IconButton sx={{ display: "flex" }}>
-
+                    < PersonOutlinedIcon />
                 </IconButton>
             </Box>
             
