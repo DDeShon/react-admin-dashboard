@@ -33,8 +33,9 @@ const Topbar = () => {
                 <IconButton onClick={colorMode.toggleColorMode}>
                     {theme.palette.mode === "dark" ? (
                         < DarkModeOutlinedIcon />
+                    ) : (
+                        < LightModeOutlinedIcon />
                     )}
-                    
                 </IconButton>
                 <IconButton >
                     < NotificationsOutlinedIcon />
