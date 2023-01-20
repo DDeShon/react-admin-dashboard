@@ -13,6 +13,9 @@ function App() {
         <div className="app">
           <main className="content">
             <Topbar />
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+            </Routes>
           </main>
         </div>
       </ThemeProvider>
