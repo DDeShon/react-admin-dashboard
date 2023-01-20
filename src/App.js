@@ -8,6 +8,7 @@ import Sidebar from "./scenes/global/Sidebar";
 
 function App() {
   const [theme, colorMode] = useMode();
+
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
