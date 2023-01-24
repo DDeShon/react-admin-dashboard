@@ -7,7 +7,7 @@ import Dashboard from "./scenes/dashboard";
 import Team from "./scenes/team";
 import Invoices from "./scenes/invoices";
 import Contacts from "./scenes/contacts";
-import Bar from "./scenes/dashboard";
+import Bar from "./scenes/bar";
 import Dashboard from "./scenes/dashboard";
 // import { useState } from "react";
 
