@@ -10,6 +10,8 @@ import Contacts from "./scenes/contacts";
 import Bar from "./scenes/bar";
 import Form from "./scenes/form";
 import Line from "./scenes/line";
+import Pie from "./scenes/pie";
+import FAQ from "./scenes/FAQ";
 // import { useState } from "react";
 
 function App() {
