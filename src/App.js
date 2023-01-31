@@ -36,7 +36,7 @@ function App() {
               <Route path="/pie" element={<Pie />} />
               <Route path="/faq" element={<FAQ />} />
               <Route path="/geography" element={<Geography />} />
-              <Route path="/" element={<Dashboard />} />
+              <Route path="/calendar" element={<Calendar />} />
             </Routes>
           </main>
         </div>
