@@ -24,7 +24,13 @@ const Sidebar = () => {
     const [isCollapsed, setIsCollapsed] = useState(false);
     const [selected, setSelected] = useState('Dashboard');
     
-    return <div>Sidebar</div>
+    return (
+        <Box>   
+            sx={{
+                
+            }}
+        </Box>
+    );
 }
 
 export default Sidebar;
