@@ -77,6 +77,11 @@ const Sidebar = () => {
                             <Box>
                                 <img />
                             </Box>
+
+                            <Box>
+                                <Typography>Monty Burns</Typography>
+                                <Typography>CEO</Typography>
+                            </Box>
                         </Box>
                     )}
                 </Menu>
