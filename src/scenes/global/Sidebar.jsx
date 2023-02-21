@@ -71,6 +71,14 @@ const Sidebar = () => {
                         </Box>
                     )}   
                     </MenuItem>
+                    {/* USER */}
+                    {!isCollapsed && (
+                        <Box>
+                            <Box>
+                                <img />
+                            </Box>
+                        </Box>
+                    )}
                 </Menu>
             </ProSidebar>
             
