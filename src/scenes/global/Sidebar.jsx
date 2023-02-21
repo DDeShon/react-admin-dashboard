@@ -38,6 +38,9 @@ const Sidebar = () => {
                 },
                 "& .pro-inner-item:hover": {
                     color: "#868dfb !important"
+                },
+                "& .pro-menu-item.active": {
+                    color: "#6870fa !important"
                 }
             }}
         </Box>
