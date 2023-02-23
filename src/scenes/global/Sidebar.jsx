@@ -84,8 +84,8 @@ const Sidebar = () => {
                                 />
                             </Box>
 
-                            <Box>
-                                <Typography>Monty Burns</Typography>
+                            <Box textAlign="center">
+                                <Typography variant="h2" color={colors.grey[100]} fontWeight="bold" sx={{ m: "10px 0 0 0"}}>Monty Burns</Typography>
                                 <Typography>CEO</Typography>
                             </Box>
                         </Box>
