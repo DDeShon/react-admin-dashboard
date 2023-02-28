@@ -18,7 +18,8 @@ import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
 const Item = ({ title, to, icon, selected, setSelected }) => {
-    
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
 }
 
 const Sidebar = () => {
