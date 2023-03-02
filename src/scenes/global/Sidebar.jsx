@@ -21,7 +21,7 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     return (
-        <MenuItem active={selected === title}>
+        <MenuItem active={selected === title} style={{ color: colors.grey[100] }}>
             <Typography></Typography>
             <Link />
         </MenuItem>
