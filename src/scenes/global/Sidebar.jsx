@@ -22,8 +22,8 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
     const colors = tokens(theme.palette.mode);
     return (
         <MenuItem active={selected === title} style={{ color: colors.grey[100] }} onClick={() => setSelected(title)} icon={icon}>
-            <Typography></Typography>
-            <Link />
+            <Typography>{title}</Typography>
+            <Link to={to} />
         </MenuItem>
     )
 }
@@ -33,11 +33,11 @@ const Sidebar = () => {
     const colors = tokens(theme.palette.mode);
     const [isCollapsed, setIsCollapsed] = useState(false);
     const [selected, setSelected] = useState('Dashboard');
-    
+
     return (
-        <Box   
+        <Box
             sx={{
-                "& .pro-sidebar-inner":{
+                "& .pro-sidebar-inner": {
                     background: `${colors.primary[400]} !important`,
                 },
                 "& .pro-icon-wrapper": {
@@ -65,21 +65,21 @@ const Sidebar = () => {
                             color: colors.grey[100],
                         }}
                     >
-                    {!isCollapsed && (
-                        <Box
-                            display="flex"
-                            justifyContent="space-between"
-                            alignItems="center"
-                            ml="15px"
-                        >
-                            <Typography variant="h3" color={colors.grey[100]}>
-                                ADMINS
-                            </Typography>
-                            <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
-                                <MenuOutlinedIcon />
-                            </IconButton>
-                        </Box>
-                    )}   
+                        {!isCollapsed && (
+                            <Box
+                                display="flex"
+                                justifyContent="space-between"
+                                alignItems="center"
+                                ml="15px"
+                            >
+                                <Typography variant="h3" color={colors.grey[100]}>
+                                    ADMINS
+                                </Typography>
+                                <IconButton onClick={() => setIsCollapsed(!isCollapsed)}>
+                                    <MenuOutlinedIcon />
+                                </IconButton>
+                            </Box>
+                        )}
                     </MenuItem>
                     {/* USER */}
                     {!isCollapsed && (
@@ -90,12 +90,12 @@ const Sidebar = () => {
                                     width="100px"
                                     height="100px"
                                     src={`.../../assets/user.png`}
-                                    style={{ cursor: "pointer", borderRadius:"50%"}}
+                                    style={{ cursor: "pointer", borderRadius: "50%" }}
                                 />
                             </Box>
 
                             <Box textAlign="center">
-                                <Typography variant="h2" color={colors.grey[100]} fontWeight="bold" sx={{ m: "10px 0 0 0"}}>Monty Burns</Typography>
+                                <Typography variant="h2" color={colors.grey[100]} fontWeight="bold" sx={{ m: "10px 0 0 0" }}>Monty Burns</Typography>
                                 <Typography variant="h5" color={colors.greenAccent[500]}>CEO</Typography>
                             </Box>
                         </Box>
@@ -103,12 +103,12 @@ const Sidebar = () => {
 
                     {/* MENU ITEMS */}
                     <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-                        
+
                     </Box>
                 </Menu>
             </ProSidebar>
-            
-            
+
+
         </Box>
     );
 }
