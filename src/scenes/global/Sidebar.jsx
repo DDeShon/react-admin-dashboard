@@ -103,7 +103,10 @@ const Sidebar = () => {
 
                     {/* MENU ITEMS */}
                     <Box paddingLeft={isCollapsed ? undefined : "10%"}>
-
+                        <Item
+                            title="Dashboard"
+                            
+                        />
                     </Box>
                 </Menu>
             </ProSidebar>
