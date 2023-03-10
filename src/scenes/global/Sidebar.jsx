@@ -111,9 +111,9 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
                         <Item
-                            title="Dashboard"
-                            to="/"
-                            icon={<HomeOutlinedIcon />}
+                            title="Manage Team"
+                            to="/team"
+                            icon={<PeopleOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
                         />
