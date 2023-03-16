@@ -121,7 +121,7 @@ const Sidebar = () => {
                         <Typography
                             variant="h5"
                             color={colors.grey[300]}
-                            sx={{ m: "25px 0 5px 65px" }}
+                            sx={{ m: "20px 0 5px 65px" }}
                         >
                             Data
                         </Typography>
@@ -150,7 +150,7 @@ const Sidebar = () => {
                         <Typography
                             variant="h5"
                             color={colors.grey[300]}
-                            sx={{ m: "25px 0 5px 65px" }}
+                            sx={{ m: "20px 0 5px 65px" }}
                         >
                             Pages
                         </Typography>
@@ -179,7 +179,7 @@ const Sidebar = () => {
                         <Typography
                             variant="h5"
                             color={colors.grey[300]}
-                            sx={{ m: "25px 0 5px 65px" }}
+                            sx={{ m: "20px 0 5px 65px" }}
                         >
                             Charts
                         </Typography>
