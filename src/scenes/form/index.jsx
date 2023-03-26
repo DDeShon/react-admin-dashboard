@@ -94,10 +94,10 @@ const Form = () => {
                 label="Email"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.firstName}
+                value={values.email}
                 name="email"
-                error={!!touched.firstName && !!errors.firstName}
-                helperText={touched.firstName && errors.firstName}
+                error={!!touched.email && !!errors.email}
+                helperText={touched.email && errors.email}
                 sx={{ gridColumn: "span 2" }}
               />
               <TextField
