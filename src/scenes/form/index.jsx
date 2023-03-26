@@ -107,10 +107,10 @@ const Form = () => {
                 label="Phone Number"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.firstName}
-                name="phone"
-                error={!!touched.firstName && !!errors.firstName}
-                helperText={touched.firstName && errors.firstName}
+                value={values.phoneNumber}
+                name="phoneNumber"
+                error={!!touched.phoneNumber && !!errors.phoneNumber}
+                helperText={touched.phoneNumber && errors.phoneNumber}
                 sx={{ gridColumn: "span 2" }}
               />
               <TextField
