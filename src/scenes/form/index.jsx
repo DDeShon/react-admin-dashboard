@@ -117,6 +117,19 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
+                label="First Name"
+                onBlur={handleBlur}
+                onChange={handleChange}
+                value={values.firstName}
+                name="firstName"
+                error={!!touched.firstName && !!errors.firstName}
+                helperText={touched.firstName && errors.firstName}
+                sx={{ gridColumn: "span 2" }}
+              />
+              <TextField
+                fullWidth
+                variant="filled"
+                type="text"
                 label="Street Address"
                 onBlur={handleBlur}
                 onChange={handleChange}
@@ -137,19 +150,6 @@ const Form = () => {
                 name="city"
                 error={!!touched.city && !!errors.city}
                 helperText={touched.city && errors.city}
-                sx={{ gridColumn: "span 2" }}
-              />
-              <TextField
-                fullWidth
-                variant="filled"
-                type="text"
-                label="First Name"
-                onBlur={handleBlur}
-                onChange={handleChange}
-                value={values.firstName}
-                name="firstName"
-                error={!!touched.firstName && !!errors.firstName}
-                helperText={touched.firstName && errors.firstName}
                 sx={{ gridColumn: "span 2" }}
               />
             </Box>
