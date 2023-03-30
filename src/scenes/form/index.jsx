@@ -137,7 +137,7 @@ const Form = () => {
                 name="address"
                 error={!!touched.address && !!errors.address}
                 helperText={touched.address && errors.address}
-                sx={{ gridColumn: "span 2" }}
+                sx={{ gridColumn: "span 4" }}
               />
               <TextField
                 fullWidth
@@ -151,6 +151,32 @@ const Form = () => {
                 error={!!touched.city && !!errors.city}
                 helperText={touched.city && errors.city}
                 sx={{ gridColumn: "span 2" }}
+              />
+              <TextField
+                fullWidth
+                variant="filled"
+                type="text"
+                label="State"
+                onBlur={handleBlur}
+                onChange={handleChange}
+                value={values.state}
+                name="state"
+                error={!!touched.state && !!errors.state}
+                helperText={touched.state && errors.state}
+                sx={{ gridColumn: "span 1" }}
+              />
+              <TextField
+                fullWidth
+                variant="filled"
+                type="text"
+                label="Zip Code"
+                onBlur={handleBlur}
+                onChange={handleChange}
+                value={values.zip}
+                name="zip"
+                error={!!touched.zip && !!errors.zip}
+                helperText={touched.zip && errors.zip}
+                sx={{ gridColumn: "span 1" }}
               />
             </Box>
           </form>
