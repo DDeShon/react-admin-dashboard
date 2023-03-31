@@ -98,7 +98,7 @@ const Form = () => {
                 name="email"
                 error={!!touched.email && !!errors.email}
                 helperText={touched.email && errors.email}
-                sx={{ gridColumn: "span 3" }}
+                sx={{ gridColumn: "span 2" }}
               />
               <TextField
                 fullWidth
@@ -111,7 +111,7 @@ const Form = () => {
                 name="phone"
                 error={!!touched.contact && !!errors.contact}
                 helperText={touched.contact && errors.contact}
-                sx={{ gridColumn: "span 1" }}
+                sx={{ gridColumn: "span 2" }}
               />
               <TextField
                 fullWidth
