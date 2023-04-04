@@ -120,10 +120,10 @@ const Form = () => {
                 label="Street Address"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.address}
+                value={values.address1}
                 name="address"
-                error={!!touched.address && !!errors.address}
-                helperText={touched.address && errors.address}
+                error={!!touched.address1 && !!errors.address1}
+                helperText={touched.address1 && errors.address1}
                 sx={{ gridColumn: "span 4" }}
               />
               <TextField
