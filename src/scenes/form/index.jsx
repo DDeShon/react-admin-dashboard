@@ -111,7 +111,7 @@ const Form = () => {
                 name="phone"
                 error={!!touched.contact && !!errors.contact}
                 helperText={touched.contact && errors.contact}
-                sx={{ gridColumn: "span 2" }}
+                sx={{ gridColumn: "span 4" }}
               />
               <TextField
                 fullWidth
