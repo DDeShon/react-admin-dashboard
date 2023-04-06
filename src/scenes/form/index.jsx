@@ -98,7 +98,7 @@ const Form = () => {
                 name="email"
                 error={!!touched.email && !!errors.email}
                 helperText={touched.email && errors.email}
-                sx={{ gridColumn: "span 2" }}
+                sx={{ gridColumn: "span 4" }}
               />
               <TextField
                 fullWidth
@@ -111,7 +111,7 @@ const Form = () => {
                 name="phone"
                 error={!!touched.contact && !!errors.contact}
                 helperText={touched.contact && errors.contact}
-                sx={{ gridColumn: "span 2" }}
+                sx={{ gridColumn: "span 4" }}
               />
               <TextField
                 fullWidth
@@ -120,10 +120,10 @@ const Form = () => {
                 label="Street Address"
                 onBlur={handleBlur}
                 onChange={handleChange}
-                value={values.address}
+                value={values.address1}
                 name="address"
-                error={!!touched.address && !!errors.address}
-                helperText={touched.address && errors.address}
+                error={!!touched.address1 && !!errors.address1}
+                helperText={touched.address1 && errors.address1}
                 sx={{ gridColumn: "span 4" }}
               />
               <TextField
