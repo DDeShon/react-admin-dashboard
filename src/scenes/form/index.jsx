@@ -150,7 +150,7 @@ const Form = () => {
                 name="state"
                 error={!!touched.state && !!errors.state}
                 helperText={touched.state && errors.state}
-                sx={{ gridColumn: "span 1" }}
+                sx={{ gridColumn: "span 2" }}
               />
               <TextField
                 fullWidth
