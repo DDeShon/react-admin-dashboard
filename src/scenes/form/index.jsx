@@ -121,10 +121,23 @@ const Form = () => {
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.address1}
-                name="address"
+                name="address1"
                 error={!!touched.address1 && !!errors.address1}
                 helperText={touched.address1 && errors.address1}
-                sx={{ gridColumn: "span 4" }}
+                sx={{ gridColumn: "span 2" }}
+              />
+              <TextField
+                fullWidth
+                variant="filled"
+                type="text"
+                label="Street Address"
+                onBlur={handleBlur}
+                onChange={handleChange}
+                value={values.address2}
+                name="address2"
+                error={!!touched.address2 && !!errors.address2}
+                helperText={touched.address2 && errors.address2}
+                sx={{ gridColumn: "span 2" }}
               />
               <TextField
                 fullWidth
