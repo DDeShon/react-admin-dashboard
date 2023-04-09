@@ -130,7 +130,7 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
-                label="Street Address"
+                label="Address 2"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.address2}
