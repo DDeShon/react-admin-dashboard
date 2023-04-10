@@ -179,7 +179,11 @@ const Form = () => {
                 sx={{ gridColumn: "span 1" }}
               />
             </Box>
-            <Box></Box>
+            <Box>
+              <Button display="flex" justifyContent="end" mt="20px">
+                Create New User
+              </Button>
+            </Box>
           </form>
         )}
       </Formik>
