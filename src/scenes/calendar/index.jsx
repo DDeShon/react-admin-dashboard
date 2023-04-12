@@ -12,3 +12,5 @@ import {
   Typography,
   useTheme,
 } from "@mui/material";
+import Header from "../../components/Header";
+import { Tokens } from "../../theme";
