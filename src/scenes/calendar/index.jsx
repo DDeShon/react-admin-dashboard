@@ -14,3 +14,7 @@ import {
 } from "@mui/material";
 import Header from "../../components/Header";
 import { Tokens } from "../../theme";
+
+const Calendar = () => {};
+
+export default Calendar;
