@@ -20,6 +20,10 @@ const Calendar = () => {
   const colors = tokens(theme.palette.mode);
 
   const [currentEvents, setCurrentEvents] = useState([]);
+
+  const handleDataClick = (selected) => {
+    const title = prompt("Please enter a new title for your event.");
+  };
 };
 
 export default Calendar;
