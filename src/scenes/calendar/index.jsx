@@ -23,6 +23,8 @@ const Calendar = () => {
 
   const handleDataClick = (selected) => {
     const title = prompt("Please enter a new title for your event.");
+    const calendarApi = selected.view.calendar;
+    calendarApi.unselect();
   };
 };
 
