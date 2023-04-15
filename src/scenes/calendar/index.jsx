@@ -46,6 +46,12 @@ const Calendar = () => {
       selected.event.remove();
     }
   };
+
+  return (
+    <Box m="20px">
+      <Header title="CALENDAR" subtitle="Interactive Calendar Page" />
+    </Box>
+  );
 };
 
 export default Calendar;
