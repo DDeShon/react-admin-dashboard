@@ -13,7 +13,7 @@ import Form from "./scenes/form";
 // import Pie from "./scenes/pie";
 // import FAQ from "./scenes/faq";
 // import Geography from "./scenes/geography";
-// import Calendar from "./scenes/calendar";
+import Calendar from "./scenes/calendar";
 // import { useState } from "react";
 
 function App() {
