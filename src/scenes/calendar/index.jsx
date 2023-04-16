@@ -13,7 +13,7 @@ import {
   useTheme,
 } from "@mui/material";
 import Header from "../../components/Header";
-import { Tokens } from "../../theme";
+import { tokens } from "../../theme";
 
 const Calendar = () => {
   const theme = useTheme();
