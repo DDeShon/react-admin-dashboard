@@ -86,6 +86,11 @@ const Calendar = () => {
             ))}
           </List>
         </Box>
+
+        {/* Calendar */}
+        <Box flex="1 1 100%" ml="15px">
+          <FullCalendar />
+        </Box>
       </Box>
     </Box>
   );
