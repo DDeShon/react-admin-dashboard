@@ -106,6 +106,8 @@ const Calendar = () => {
             editable={true}
             selectable={true}
             selectMirror={true}
+            dayMaxEvents={true}
+            select={handleDateClick}
           />
         </Box>
       </Box>
