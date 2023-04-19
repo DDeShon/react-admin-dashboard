@@ -103,6 +103,9 @@ const Calendar = () => {
               right: "dayGridMonth, timeGridWeek, timeGridDay, listMonth",
             }}
             initialView="dayGridMonth"
+            editable={true}
+            selectable={true}
+            selectMirror={true}
           />
         </Box>
       </Box>
