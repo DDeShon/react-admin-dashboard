@@ -108,6 +108,11 @@ const Calendar = () => {
             selectMirror={true}
             dayMaxEvents={true}
             select={handleDateClick}
+            eventClick={handleEventClick}
+            eventsSet={(events) => setCurrentEvents(events)}
+            initialEvents={[
+              { id: "1234", title: "All-day event", date: "2023-04-20" },
+            ]}
           />
         </Box>
       </Box>
