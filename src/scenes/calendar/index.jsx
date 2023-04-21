@@ -112,6 +112,7 @@ const Calendar = () => {
             eventsSet={(events) => setCurrentEvents(events)}
             initialEvents={[
               { id: "1234", title: "All-day event", date: "2023-04-20" },
+              { id: "4321", title: "Timed event", date: "2023-04-21" },
             ]}
           />
         </Box>
