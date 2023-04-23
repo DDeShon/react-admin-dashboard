@@ -14,7 +14,95 @@ const FAQ = () => {
     <Box m="20px">
       <Header title="FAQ" subtitle="Frequently Asked Questions Page" />
 
-      <Accordion></Accordion>
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            An Important Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid
+            laboriosam modi! Nulla natus dolorem eos eveniet quasi, eius,
+            quaerat temporibus delectus eaque ab nisi.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            Another Important Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid
+            laboriosam modi! Nulla natus dolorem eos eveniet quasi, eius,
+            quaerat temporibus delectus eaque ab nisi.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            Another Important Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid
+            laboriosam modi! Nulla natus dolorem eos eveniet quasi, eius,
+            quaerat temporibus delectus eaque ab nisi.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            Another Important Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid
+            laboriosam modi! Nulla natus dolorem eos eveniet quasi, eius,
+            quaerat temporibus delectus eaque ab nisi.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            Another Important Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid
+            laboriosam modi! Nulla natus dolorem eos eveniet quasi, eius,
+            quaerat temporibus delectus eaque ab nisi.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography color={colors.greenAccent[500]} variant="h5">
+            Another Important Question
+          </Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam aliquid
+            laboriosam modi! Nulla natus dolorem eos eveniet quasi, eius,
+            quaerat temporibus delectus eaque ab nisi.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
     </Box>
   );
 };
