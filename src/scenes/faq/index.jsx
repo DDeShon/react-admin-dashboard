@@ -106,3 +106,5 @@ const FAQ = () => {
     </Box>
   );
 };
+
+export default FAQ;
