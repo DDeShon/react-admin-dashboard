@@ -22,6 +22,21 @@ const PieChart = () => {
               fill: colors.grey[100],
             },
           },
+          ticks: {
+            line: {
+              stroke: {
+                strokeWidth: 1,
+              },
+              text: {
+                fill: colors.grey[100],
+              },
+            },
+          },
+        },
+        legends: {
+          text: {
+            fill: colors.grey[100],
+          },
         },
       }}
       margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
