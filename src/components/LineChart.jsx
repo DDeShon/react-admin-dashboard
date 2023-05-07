@@ -10,6 +10,29 @@ const LineChart = () => {
   return (
     <ResponsiveLine
       data={data}
+      theme={{
+        axis: {
+          domain: {
+            line: {
+              stroke: colors.grey[100],
+            },
+          },
+          legend: {
+            text: {
+              fill: colors.grey[100],
+            },
+          },
+          ticks: {
+            line: {
+              stroke: colors.grey[100],
+              strokeWidth: 1,
+            },
+            text: {
+              fill: colors.grey[100],
+            },
+          },
+        },
+      }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
