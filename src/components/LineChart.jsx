@@ -31,6 +31,16 @@ const LineChart = () => {
               fill: colors.grey[100],
             },
           },
+          legends: {
+            text: {
+              fill: colors.grey[100],
+            },
+          },
+          tooltip: {
+            container: {
+              color: colors.primary[500],
+            },
+          },
         },
       }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
