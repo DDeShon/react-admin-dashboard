@@ -14,7 +14,6 @@ import Bar from "./scenes/bar";
 import Line from "./scenes/line";
 import Pie from "./scenes/pie";
 import Geography from "./scenes/geography";
-// import { useState } from "react";
 
 function App() {
   const [theme, colorMode] = useMode();
