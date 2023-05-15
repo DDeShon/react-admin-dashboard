@@ -58,7 +58,7 @@ const LineChart = ({ isDashboard = false }) => {
       axisRight={null}
       axisBottom={{
         orient: "bottom",
-        tickSize: 5,
+        tickSize: 0,
         tickPadding: 5,
         tickRotation: 0,
         legend: isDashboard ? undefined : "transportation",
@@ -68,15 +68,15 @@ const LineChart = ({ isDashboard = false }) => {
       axisLeft={{
         orient: "left",
         tickValues: 5,
-        tickSize: 5,
+        tickSize: 3,
         tickPadding: 5,
         tickRotation: 0,
         legend: isDashboard ? undefined : "count",
         legendOffset: -40,
         legendPosition: "middle",
       }}
-      enableGridX={true}
-      enableGridY={true}
+      enableGridX={false}
+      enableGridY={false}
       pointSize={10}
       pointColor={{ theme: "background" }}
       pointBorderWidth={2}
