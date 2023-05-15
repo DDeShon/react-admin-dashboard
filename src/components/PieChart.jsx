@@ -1,12 +1,11 @@
-import { useTheme } from "@mui/material";
 import { ResponsivePie } from "@nivo/pie";
 import { tokens } from "../theme";
+import { useTheme } from "@mui/material";
 import { mockPieData as data } from "../data/mockData";
 
 const PieChart = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
-
   return (
     <ResponsivePie
       data={data}
@@ -24,12 +23,11 @@ const PieChart = () => {
           },
           ticks: {
             line: {
-              stroke: {
-                strokeWidth: 1,
-              },
-              text: {
-                fill: colors.grey[100],
-              },
+              stroke: colors.grey[100],
+              strokeWidth: 1,
+            },
+            text: {
+              fill: colors.grey[100],
             },
           },
         },
@@ -44,7 +42,6 @@ const PieChart = () => {
       padAngle={0.7}
       cornerRadius={3}
       activeOuterRadiusOffset={8}
-      borderWidth={1}
       borderColor={{
         from: "color",
         modifiers: [["darker", 0.2]],
@@ -54,7 +51,8 @@ const PieChart = () => {
       arcLinkLabelsThickness={2}
       arcLinkLabelsColor={{ from: "color" }}
       enableArcLabels={false}
-      arcLabelsSkipAngle={10}
+      arcLabelsRadiusOffset={0.4}
+      arcLabelsSkipAngle={7}
       arcLabelsTextColor={{
         from: "color",
         modifiers: [["darker", 2]],

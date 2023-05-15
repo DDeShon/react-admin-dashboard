@@ -1,9 +1,9 @@
-import { useTheme } from "@mui/material";
 import { ResponsiveLine } from "@nivo/line";
+import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import { mockLineData as data } from "../data/mockData";
 
-const LineChart = ({ isDashboard = false }) => {
+const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
@@ -31,19 +31,19 @@ const LineChart = ({ isDashboard = false }) => {
               fill: colors.grey[100],
             },
           },
-          legends: {
-            text: {
-              fill: colors.grey[100],
-            },
+        },
+        legends: {
+          text: {
+            fill: colors.grey[100],
           },
-          tooltip: {
-            container: {
-              color: colors.primary[500],
-            },
+        },
+        tooltip: {
+          container: {
+            color: colors.primary[500],
           },
         },
       }}
-      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }}
+      colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }} // added
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
       xScale={{ type: "point" }}
       yScale={{
@@ -54,6 +54,7 @@ const LineChart = ({ isDashboard = false }) => {
         reverse: false,
       }}
       yFormat=" >-.2f"
+      curve="catmullRom"
       axisTop={null}
       axisRight={null}
       axisBottom={{
@@ -61,23 +62,23 @@ const LineChart = ({ isDashboard = false }) => {
         tickSize: 0,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "transportation",
+        legend: isDashboard ? undefined : "transportation", // added
         legendOffset: 36,
         legendPosition: "middle",
       }}
       axisLeft={{
         orient: "left",
-        tickValues: 5,
+        tickValues: 5, // added
         tickSize: 3,
         tickPadding: 5,
         tickRotation: 0,
-        legend: isDashboard ? undefined : "count",
+        legend: isDashboard ? undefined : "count", // added
         legendOffset: -40,
         legendPosition: "middle",
       }}
       enableGridX={false}
       enableGridY={false}
-      pointSize={10}
+      pointSize={8}
       pointColor={{ theme: "background" }}
       pointBorderWidth={2}
       pointBorderColor={{ from: "serieColor" }}
