@@ -37,6 +37,23 @@ const Dashboard = () => {
           Download Reports
         </Button>
       </Box>
+
+      {/* Grid & Charts */}
+      <Box
+        display="grid"
+        gridTemplateColumns="repeat(12, 1fr)"
+        gridAutoRows="140px"
+        gap="20px"
+      >
+        {/* Row 1 */}
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        ></Box>
+      </Box>
     </Box>
   );
 };
