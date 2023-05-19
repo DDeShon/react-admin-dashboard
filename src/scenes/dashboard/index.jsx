@@ -52,7 +52,19 @@ const Dashboard = () => {
           display="flex"
           alignItems="center"
           justifyContent="center"
-        ></Box>
+        >
+          <StatBox
+            title="12350"
+            subtitle="Emails Sent"
+            progress="0.75"
+            increase="14%"
+            icon={
+              <EmailIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
       </Box>
     </Box>
   );
