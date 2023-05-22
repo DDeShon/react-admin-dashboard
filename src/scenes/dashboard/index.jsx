@@ -78,7 +78,7 @@ const Dashboard = () => {
             progress="0.50"
             increase="+21%"
             icon={
-              <EmailIcon
+              <PointOfSaleIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
@@ -97,7 +97,26 @@ const Dashboard = () => {
             progress="0.30"
             increase="+5%"
             icon={
-              <EmailIcon
+              <PersonAddIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="1,352,000"
+            subtitle="Traffic Inbound"
+            progress="0.80"
+            increase="+43%"
+            icon={
+              <TrafficIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
               />
             }
