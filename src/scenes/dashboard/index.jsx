@@ -54,10 +54,10 @@ const Dashboard = () => {
           justifyContent="center"
         >
           <StatBox
-            title="12350"
+            title="12,350"
             subtitle="Emails Sent"
             progress="0.75"
-            increase="14%"
+            increase="+14%"
             icon={
               <EmailIcon
                 sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
@@ -65,8 +65,44 @@ const Dashboard = () => {
             }
           />
         </Box>
-
-        <Box></Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="501,523"
+            subtitle="Sales Obtained"
+            progress="0.50"
+            increase="+21%"
+            icon={
+              <EmailIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
+        <Box
+          gridColumn="span 3"
+          backgroundColor={colors.primary[400]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <StatBox
+            title="52,000"
+            subtitle="New Clients"
+            progress="0.30"
+            increase="+5%"
+            icon={
+              <EmailIcon
+                sx={{ color: colors.greenAccent[600], fontSize: "26px" }}
+              />
+            }
+          />
+        </Box>
       </Box>
     </Box>
   );
