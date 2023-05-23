@@ -145,6 +145,20 @@ const Dashboard = () => {
               >
                 Revenue Generated
               </Typography>
+              <Typography
+                variant="h3"
+                fontWeight="500"
+                color={colors.greenAccent[500]}
+              >
+                $59,342.32
+              </Typography>
+            </Box>
+            <Box>
+              <IconButton>
+                <DownloadOutlinedIcon
+                  sx={{ fontSize: "26px", color: colors.greenAccent[500] }}
+                />
+              </IconButton>
             </Box>
           </Box>
         </Box>
