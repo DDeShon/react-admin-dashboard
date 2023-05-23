@@ -123,6 +123,9 @@ const Dashboard = () => {
             }
           />
         </Box>
+
+        {/* Row 2 */}
+        <Box gridColumn="span 8" gridRow="span 2"></Box>
       </Box>
     </Box>
   );
