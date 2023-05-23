@@ -161,6 +161,12 @@ const Dashboard = () => {
               </IconButton>
             </Box>
           </Box>
+          <Box height="250px" ml="-20px">
+            <lineChart isDashboard={true} />
+          </Box>
+
+          {/* Transactions */}
+          <Box></Box>
         </Box>
       </Box>
     </Box>
