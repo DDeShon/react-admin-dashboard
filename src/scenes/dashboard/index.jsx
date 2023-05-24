@@ -166,7 +166,21 @@ const Dashboard = () => {
           </Box>
 
           {/* Transactions */}
-          <Box></Box>
+          <Box
+            gridColumn="span 4"
+            gridRow="span 2"
+            backgroundColor={colors.primary[400]}
+            overflow="auto"
+          >
+            <Box
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+              borderBottom={`4px solid ${colors.primary[500]}`}
+              colors={colors.grey[100]}
+              p="15px"
+            ></Box>
+          </Box>
         </Box>
       </Box>
     </Box>
