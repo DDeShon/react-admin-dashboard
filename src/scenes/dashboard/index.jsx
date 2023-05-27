@@ -147,7 +147,7 @@ const Dashboard = () => {
               </Typography>
               <Typography
                 variant="h3"
-                fontWeight="500"
+                fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
                 $59,342.32
@@ -161,7 +161,7 @@ const Dashboard = () => {
               </IconButton>
             </Box>
           </Box>
-          <Box height="250px" ml="-20px">
+          <Box height="250px" mt="-20px">
             <lineChart isDashboard={true} />
           </Box>
         </Box>
