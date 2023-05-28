@@ -273,8 +273,6 @@ const Dashboard = () => {
             <GeographyChart isDashboard={true} />
           </Box>
         </Box>
-
-        {/*  */}
       </Box>
     </Box>
   );
